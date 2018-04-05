@@ -1,0 +1,23 @@
+{
+  "name": "simplerestserver",
+  "version": "1.0.0",
+  "description": "A simple rest server to manage users",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "clean": "rimraf dist",
+    "build": "npm run clean && mkdir dist && babel main -s -d dist",
+    "production": "npm run build && node prod"
+  },
+  "author": "praveen kn",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-preset-env": "^1.6.1",
+    "rimraf": "^2.6.2",
+    "express": "^4.16.3",
+    "body-parser": "^1.18.2",
+    "firebase": "^4.12.1",
+    "firebase-admin": "^5.11.0"
+  }
+}
