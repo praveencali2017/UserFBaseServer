@@ -1,6 +1,10 @@
 {
   "name": "simplerestserver",
   "version": "1.0.0",
+  "engines": {
+    "node": "9.9.0",
+    "npm": "5.6.0"
+  },
   "description": "A simple rest server to manage users",
   "main": "server.js",
   "scripts": {
