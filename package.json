@@ -9,6 +9,7 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
+    "heroku-prebuild": "npm install --only=dev",
     "start": "node server.js",
     "clean": "rimraf dist",
     "build": "npm run clean && mkdir dist && babel main -s -d dist",
